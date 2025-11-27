@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import 'screens/home_screen.dart';
-import 'utils/constants.dart';
+import 'core/constants/colors.dart';
+import 'core/di/dependency_injection.dart';
+import 'presentation/screens/home_screen.dart';
 
 void main() {
+  initDependencies();
   runApp(MyApp());
 }
 
